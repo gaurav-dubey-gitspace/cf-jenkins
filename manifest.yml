@@ -2,5 +2,5 @@
 applications:
 - name: cicd-jenkins-sample
   instances: 1
-  memory: 800m
+  memory: 1200m
   path: target/sample-0.0.1-SNAPSHOT.jar 
