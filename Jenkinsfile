@@ -29,4 +29,16 @@ pipeline {
 		
 		
 	}
+	
+	post { 
+        always { 
+            echo 'I will always say Hello again!'
+		pushToCloudFoundry(
+  target: 'https://api.cf.us10.hana.ondemand.com',
+  organization: '1a723b59trial',
+  cloudSpace: 'testspace',
+  credentialsId: 'PCF_LOGIN'
+)
+        }
+    }
 }
